@@ -29,7 +29,7 @@ from detectron2.utils.visualizer import Visualizer
 # Paths: same config/weights as the notebook (run from climb_seg or project root)
 # ---------------------------------------------------------------------------
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-LATER_DIR = os.path.join(_SCRIPT_DIR, "..", "Later")
+LATER_DIR = os.path.join(_SCRIPT_DIR, "Later")
 CONFIG_FILE = os.path.join(LATER_DIR, "experiment_config.yml")
 MODEL_PATH = os.path.join(LATER_DIR, "model_complete.pth")
 
@@ -256,3 +256,4 @@ async def predict(
         detections=detections,
         image_with_boxes_base64=image_with_boxes_base64,
     )
+
