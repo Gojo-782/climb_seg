@@ -14,7 +14,8 @@ comm==0.2.3
 cycler==0.12.1
 debugpy==1.8.20
 decorator==5.2.1
-detectron2==0.6
+git+https://github.com/facebookresearch/detectron2.git@v0.6
+exceptiongroup==1.3.1
 exceptiongroup==1.3.1
 executing==2.2.1
 fastapi==0.128.8
