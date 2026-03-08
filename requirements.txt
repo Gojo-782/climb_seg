@@ -23,5 +23,3 @@ uvicorn==0.39.0
 python-multipart==0.0.20
 python-dotenv==1.2.1
 pydantic==2.12.5
-
-git+https://github.com/facebookresearch/detectron2.git@v0.6
