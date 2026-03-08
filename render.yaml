@@ -1,0 +1,8 @@
+# Render Blueprint: deploy as a Web Service
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: climb-seg
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
