@@ -49,7 +49,7 @@ MODEL:
   BACKBONE:
     FREEZE_AT: 2
     NAME: build_resnet_fpn_backbone
-  DEVICE: cuda
+  DEVICE: cpu
   FPN:
     FUSE_TYPE: sum
     IN_FEATURES:
@@ -158,8 +158,6 @@ MODEL:
     CLS_AGNOSTIC_BBOX_REG: false
     CONV_DIM: 256
     FC_DIM: 1024
-    FED_LOSS_FREQ_WEIGHT_POWER: 0.5
-    FED_LOSS_NUM_CLASSES: 50
     NAME: FastRCNNConvFCHead
     NORM: ''
     NUM_CONV: 0
@@ -169,7 +167,6 @@ MODEL:
     POOLER_TYPE: ROIAlignV2
     SMOOTH_L1_BETA: 0.0
     TRAIN_ON_PRED_BOXES: false
-    USE_FED_LOSS: false
     USE_SIGMOID_CE: false
   ROI_HEADS:
     BATCH_SIZE_PER_IMAGE: 512
