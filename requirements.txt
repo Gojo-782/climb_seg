@@ -9,7 +9,7 @@ pydantic==2.12.5
 
 numpy==1.24.4
 scipy==1.10.1
-opencv-python==4.6.0.66
+opencv-python-headless==4.6.0.66
 pillow==9.5.0
 matplotlib==3.5.3
 tqdm==4.67.3
@@ -29,3 +29,5 @@ pycocotools==2.0.11
 shapely==2.0.1
 
 requests==2.32.5
+
+git+https://github.com/facebookresearch/detectron2.git
